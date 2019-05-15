@@ -462,10 +462,11 @@ img {
 
 .large-hero {
 	position: relative;
+	border-top: 10px solid darkRed;
 	border-bottom: 10px solid black;
 	background: #200122;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-gradient(linear, left top, right top, from(#6f0000), to(#200122));
-background: linear-gradient(to right, #6f0000, #200122);
+	background: -webkit-gradient(linear, left top, right top, from(#6f0000), to(#200122));
+	background: linear-gradient(to right, #6f0000, #200122);
 }
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -619,6 +620,185 @@ background: linear-gradient(to right, #6f0000, #200122);
 		border-radius: 40%;
 	}
 
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	-webkit-transition: background-color .3s ease-out;
+	transition: background-color .3s ease-out;
+}
 
+.site-header--is-expanded {
+		background-color: rgba(102, 51, 153, .55);
+	}
+
+@media (min-width: 530px) {
+
+.site-header {
+		background-color: rgba(0, 0, 0, .8)
+}
+	}
+
+.site-header__menu-icon {
+		width: 20px;
+		height: 19px;
+		position: absolute;
+		z-index: 10;
+		top: 10px;
+		right: 5px;
+	}
+
+.site-header__menu-icon::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: white;
+			-webkit-transform-origin: 0 0;
+			        transform-origin: 0 0;
+			-webkit-transition: all .4s ease-out;
+			transition: all .4s ease-out;
+		}
+
+.site-header__menu-icon__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: maroon;
+			-webkit-transition: all .3s ease-out;
+			transition: all .3s ease-out;
+		}
+
+.site-header__menu-icon::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: white;
+			-webkit-transform-origin: 0 100%;
+			        transform-origin: 0 100%;
+			-webkit-transition: all .4s ease-out;
+			transition: all .4s ease-out;
+		}
+
+@media (min-width: 530px) {
+
+.site-header__menu-icon {
+			display: none
+	}
+	}
+
+.site-header__menu-icon--close-x::before {
+			-webkit-transform: rotate(45deg) scaleX(1.25);
+			        transform: rotate(45deg) scaleX(1.25);
+			background-color: maroon;
+		}
+
+.site-header__menu-icon--close-x .site-header__menu-icon__middle {
+			opacity: 0;
+			-webkit-transform: scaleX(0);
+			        transform: scaleX(0);
+		}
+
+.site-header__menu-icon--close-x::after {
+			-webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			background-color: maroon;
+		}
+
+.site-header__menu-content {
+		opacity: 0;
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+		-webkit-transition: all.3s ease-out;
+		transition: all.3s ease-out;
+		z-index: -10;
+		position: relative;
+		padding-top: 2px;
+	}
+
+@media (min-width: 530px) {
+
+.site-header__menu-content {
+			opacity: 1;
+			z-index: 1;
+			padding-top: 0;
+			-webkit-transform: scale(1);
+			        transform: scale(1)
+	}
+	}
+
+.site-header__menu-content--is-visible {
+			opacity: 1;
+			z-index: 1;
+			-webkit-transform: scale(1);
+			        transform: scale(1);
+		}
+
+.primary-nav {
+	padding-top: 10px;
+}
+
+@media (min-width: 530px) {
+
+.primary-nav {
+		padding-top: 0
+}
+	}
+
+@media (min-width: 530px) {
+
+.primary-nav--pull-right {
+			float: right
+	}
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+		/*@mixin clearfix;*/
+	}
+
+.primary-nav li {
+		list-style: none;
+		display: inline-block;
+		padding-right: 7px;
+	}
+
+@media (min-width: 530px) {
+
+.primary-nav li {
+			padding-right: 20px;
+			float: left;
+			display: block
+	}
+	}
+
+.primary-nav a {
+		color: #FFF;
+		font-weight: 300;
+		text-decoration: none;
+		display: block;
+		padding: 1px 3px;
+		font-size: .8rem;
+		background-color: rgba(138, 43, 226, .5);
+		border-radius: 10%;
+	}
+
+@media (min-width: 530px) {
+
+.primary-nav a {
+			font-size: 1rem;
+			padding: 4px 4px;
+			border-radius: 10%
+	}
+	}
 
 

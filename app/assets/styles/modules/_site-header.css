@@ -1,0 +1,105 @@
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	transition: background-color .3s ease-out;
+
+	&--is-expanded {
+		background-color: rgba(102, 51, 153, .55);
+	}
+	
+
+	@mixin atSmall {
+		background-color: rgba(0, 0, 0, .8);
+	}
+
+
+	&__menu-icon {
+		width: 20px;
+		height: 19px;
+		position: absolute;
+		z-index: 10;
+		top: 10px;
+		right: 5px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: white;
+			transform-origin: 0 0;
+			transition: all .4s ease-out;
+		}
+
+		&__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: maroon;
+			transition: all .3s ease-out;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: white;
+			transform-origin: 0 100%;
+			transition: all .4s ease-out;
+		}
+
+		@mixin atSmall {
+			display: none;
+		}
+	}
+
+
+	&__menu-icon--close-x {
+		&::before {
+			transform: rotate(45deg) scaleX(1.25);
+			background-color: maroon;
+		}
+
+		.site-header__menu-icon__middle {
+			opacity: 0;
+			transform: scaleX(0);
+		}
+
+		&::after {
+			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			background-color: maroon;
+		}
+	}
+
+
+	&__menu-content {
+		opacity: 0;
+		transform: scale(1.2);
+		transition: all.3s ease-out;
+		z-index: -10;
+		position: relative;
+		padding-top: 2px;
+
+		@mixin atSmall {
+			opacity: 1;
+			z-index: 1;
+			padding-top: 0;
+			transform: scale(1);
+		}
+
+		&--is-visible {
+			opacity: 1;
+			z-index: 1;
+			transform: scale(1);
+		}
+	}
+}
