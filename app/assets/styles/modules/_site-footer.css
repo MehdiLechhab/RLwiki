@@ -10,8 +10,8 @@
 		margin-bottom: 1rem;
 
 		@mixin atSmall {
-			display: inline;
-			margin-bottom: 0;
+			/*display: inline;*/
+			margin-bottom: 1rem;
 			margin-right: 1.4rem;
 		}
 	}

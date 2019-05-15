@@ -605,8 +605,8 @@ background: linear-gradient(to right, #6f0000, #200122);
 @media (min-width: 530px) {
 
 .site-footer__text {
-			display: inline;
-			margin-bottom: 0;
+			/*display: inline;*/
+			margin-bottom: 1rem;
 			margin-right: 1.4rem
 	}
 	}
