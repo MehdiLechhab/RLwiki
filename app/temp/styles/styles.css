@@ -590,6 +590,35 @@ background: linear-gradient(to right, #6f0000, #200122);
 		font-weight: 500;
 	}
 
+.site-footer {
+	background-color: #C13C3C;
+	color: #FFFFFF;
+	padding: .5rem 0;
+	text-align: center;
+}
+
+.site-footer__text {
+		display: block;
+		margin-bottom: 1rem;
+	}
+
+@media (min-width: 530px) {
+
+.site-footer__text {
+			display: inline;
+			margin-bottom: 0;
+			margin-right: 1.4rem
+	}
+	}
+
+.site-footer__icon {
+		margin-right: .3rem;
+	}
+
+.site-footer__icon--round {
+		border-radius: 40%;
+	}
+
 
 
 
