@@ -11,6 +11,13 @@ import Modaldin from './modules/Modaldin';
 import Modalfisch from './modules/Modalfisch';
 import Modalashi from './modules/Modalashi';
 import Modalmadr from './modules/Modalmadr';
+import Modalcameo from './modules/Modalcameo';
+import Modalconst from './modules/Modalconst';
+import Modalazael from './modules/Modalazael';
+import Modalms from './modules/Modalms';
+import Modalseraph from './modules/Modalseraph';
+import Modalflorian from './modules/Modalflorian';
+
 
 var mobileMenu = new MobileMenu();
 var modalcas = new Modalcas();
@@ -25,3 +32,9 @@ var modaldin = new Modaldin();
 var modalfisch = new Modalfisch();
 var modalashi = new Modalashi();
 var modalmadr = new Modalmadr();
+var modalcameo = new Modalcameo();
+var modalconst = new Modalconst();
+var modalazael = new Modalazael();
+var modalms = new Modalms();
+var modalseraph = new Modalseraph();
+var modalflorian = new Modalflorian();

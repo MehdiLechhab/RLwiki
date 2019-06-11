@@ -10382,6 +10382,30 @@ var _Modalmadr = __webpack_require__(14);
 
 var _Modalmadr2 = _interopRequireDefault(_Modalmadr);
 
+var _Modalcameo = __webpack_require__(15);
+
+var _Modalcameo2 = _interopRequireDefault(_Modalcameo);
+
+var _Modalconst = __webpack_require__(16);
+
+var _Modalconst2 = _interopRequireDefault(_Modalconst);
+
+var _Modalazael = __webpack_require__(17);
+
+var _Modalazael2 = _interopRequireDefault(_Modalazael);
+
+var _Modalms = __webpack_require__(18);
+
+var _Modalms2 = _interopRequireDefault(_Modalms);
+
+var _Modalseraph = __webpack_require__(19);
+
+var _Modalseraph2 = _interopRequireDefault(_Modalseraph);
+
+var _Modalflorian = __webpack_require__(20);
+
+var _Modalflorian2 = _interopRequireDefault(_Modalflorian);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -10397,6 +10421,12 @@ var modaldin = new _Modaldin2.default();
 var modalfisch = new _Modalfisch2.default();
 var modalashi = new _Modalashi2.default();
 var modalmadr = new _Modalmadr2.default();
+var modalcameo = new _Modalcameo2.default();
+var modalconst = new _Modalconst2.default();
+var modalazael = new _Modalazael2.default();
+var modalms = new _Modalms2.default();
+var modalseraph = new _Modalseraph2.default();
+var modalflorian = new _Modalflorian2.default();
 
 /***/ }),
 /* 2 */
@@ -11239,6 +11269,402 @@ var Modalmadr = function () {
 }();
 
 exports.default = Modalmadr;
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// cameo
+var Modalcameo = function () {
+	function Modalcameo() {
+		_classCallCheck(this, Modalcameo);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--cameo");
+		this.modal = (0, _jquery2.default)(".modalcameo");
+		this.closeModalButton = (0, _jquery2.default)(".modalcameo__close");
+		this.events();
+	}
+
+	_createClass(Modalcameo, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalcameo--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalcameo--is-visible");
+		}
+	}]);
+
+	return Modalcameo;
+}();
+
+exports.default = Modalcameo;
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Construct
+var Modalconst = function () {
+	function Modalconst() {
+		_classCallCheck(this, Modalconst);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--const");
+		this.modal = (0, _jquery2.default)(".modalconst");
+		this.closeModalButton = (0, _jquery2.default)(".modalconst__close");
+		this.events();
+	}
+
+	_createClass(Modalconst, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalconst--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalconst--is-visible");
+		}
+	}]);
+
+	return Modalconst;
+}();
+
+exports.default = Modalconst;
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Azael
+var Modalazael = function () {
+	function Modalazael() {
+		_classCallCheck(this, Modalazael);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--azael");
+		this.modal = (0, _jquery2.default)(".modalazael");
+		this.closeModalButton = (0, _jquery2.default)(".modalazael__close");
+		this.events();
+	}
+
+	_createClass(Modalazael, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalazael--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalazael--is-visible");
+		}
+	}]);
+
+	return Modalazael;
+}();
+
+exports.default = Modalazael;
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Metal Scroom
+var Modalms = function () {
+	function Modalms() {
+		_classCallCheck(this, Modalms);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--ms");
+		this.modal = (0, _jquery2.default)(".modalms");
+		this.closeModalButton = (0, _jquery2.default)(".modalms__close");
+		this.events();
+	}
+
+	_createClass(Modalms, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalms--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalms--is-visible");
+		}
+	}]);
+
+	return Modalms;
+}();
+
+exports.default = Modalms;
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Seraph
+var Modalseraph = function () {
+	function Modalseraph() {
+		_classCallCheck(this, Modalseraph);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--seraph");
+		this.modal = (0, _jquery2.default)(".modalseraph");
+		this.closeModalButton = (0, _jquery2.default)(".modalseraph__close");
+		this.events();
+	}
+
+	_createClass(Modalseraph, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalseraph--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalseraph--is-visible");
+		}
+	}]);
+
+	return Modalseraph;
+}();
+
+exports.default = Modalseraph;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Florian
+var Modalflorian = function () {
+	function Modalflorian() {
+		_classCallCheck(this, Modalflorian);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--florian");
+		this.modal = (0, _jquery2.default)(".modalflorian");
+		this.closeModalButton = (0, _jquery2.default)(".modalflorian__close");
+		this.events();
+	}
+
+	_createClass(Modalflorian, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalflorian--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalflorian--is-visible");
+		}
+	}]);
+
+	return Modalflorian;
+}();
+
+exports.default = Modalflorian;
 
 /***/ })
 /******/ ]);
