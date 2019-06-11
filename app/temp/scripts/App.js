@@ -60,76 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _MobileMenu = __webpack_require__(1);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mobileMenu = new _MobileMenu2.default();
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(2);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MobileMenu = function () {
-	function MobileMenu() {
-		_classCallCheck(this, MobileMenu);
-
-		this.siteHeader = (0, _jquery2.default)(".site-header");
-		this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
-		this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
-		this.events();
-	}
-
-	_createClass(MobileMenu, [{
-		key: "events",
-		value: function events() {
-			this.menuIcon.click(this.toggleTheMenu.bind(this));
-		}
-	}, {
-		key: "toggleTheMenu",
-		value: function toggleTheMenu() {
-			this.menuContent.toggleClass("site-header__menu-content--is-visible");
-			this.siteHeader.toggleClass("site-header--is-expanded");
-			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
-		}
-	}]);
-
-	return MobileMenu;
-}();
-
-exports.default = MobileMenu;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10387,6 +10322,923 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _MobileMenu = __webpack_require__(2);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _Modalcas = __webpack_require__(3);
+
+var _Modalcas2 = _interopRequireDefault(_Modalcas);
+
+var _Modaldzin = __webpack_require__(4);
+
+var _Modaldzin2 = _interopRequireDefault(_Modaldzin);
+
+var _Modalhasel = __webpack_require__(5);
+
+var _Modalhasel2 = _interopRequireDefault(_Modalhasel);
+
+var _Modalkasp = __webpack_require__(6);
+
+var _Modalkasp2 = _interopRequireDefault(_Modalkasp);
+
+var _Modalrigan = __webpack_require__(7);
+
+var _Modalrigan2 = _interopRequireDefault(_Modalrigan);
+
+var _Modalscroom = __webpack_require__(8);
+
+var _Modalscroom2 = _interopRequireDefault(_Modalscroom);
+
+var _Modalvin = __webpack_require__(9);
+
+var _Modalvin2 = _interopRequireDefault(_Modalvin);
+
+var _Modalgaian = __webpack_require__(10);
+
+var _Modalgaian2 = _interopRequireDefault(_Modalgaian);
+
+var _Modaldin = __webpack_require__(11);
+
+var _Modaldin2 = _interopRequireDefault(_Modaldin);
+
+var _Modalfisch = __webpack_require__(12);
+
+var _Modalfisch2 = _interopRequireDefault(_Modalfisch);
+
+var _Modalashi = __webpack_require__(13);
+
+var _Modalashi2 = _interopRequireDefault(_Modalashi);
+
+var _Modalmadr = __webpack_require__(14);
+
+var _Modalmadr2 = _interopRequireDefault(_Modalmadr);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mobileMenu = new _MobileMenu2.default();
+var modalcas = new _Modalcas2.default();
+var modaldzin = new _Modaldzin2.default();
+var modalhasel = new _Modalhasel2.default();
+var modalkasp = new _Modalkasp2.default();
+var modalrigan = new _Modalrigan2.default();
+var modalscroom = new _Modalscroom2.default();
+var modalvin = new _Modalvin2.default();
+var modalgaian = new _Modalgaian2.default();
+var modaldin = new _Modaldin2.default();
+var modalfisch = new _Modalfisch2.default();
+var modalashi = new _Modalashi2.default();
+var modalmadr = new _Modalmadr2.default();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+	function MobileMenu() {
+		_classCallCheck(this, MobileMenu);
+
+		this.siteHeader = (0, _jquery2.default)(".site-header");
+		this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
+		this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
+		this.events();
+	}
+
+	_createClass(MobileMenu, [{
+		key: "events",
+		value: function events() {
+			this.menuIcon.click(this.toggleTheMenu.bind(this));
+		}
+	}, {
+		key: "toggleTheMenu",
+		value: function toggleTheMenu() {
+			this.menuContent.toggleClass("site-header__menu-content--is-visible");
+			this.siteHeader.toggleClass("site-header--is-expanded");
+			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+		}
+	}]);
+
+	return MobileMenu;
+}();
+
+exports.default = MobileMenu;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Castellan
+var Modalcas = function () {
+	function Modalcas() {
+		_classCallCheck(this, Modalcas);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--castellan");
+		this.modal = (0, _jquery2.default)(".modalcas");
+		this.closeModalButton = (0, _jquery2.default)(".modalcas__close");
+		this.events();
+	}
+
+	_createClass(Modalcas, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalcas--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalcas--is-visible");
+		}
+	}]);
+
+	return Modalcas;
+}();
+
+exports.default = Modalcas;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Dzin
+var Modaldzin = function () {
+	function Modaldzin() {
+		_classCallCheck(this, Modaldzin);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--dzin");
+		this.modal = (0, _jquery2.default)(".modaldzin");
+		this.closeModalButton = (0, _jquery2.default)(".modaldzin__close");
+		this.events();
+	}
+
+	_createClass(Modaldzin, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modaldzin--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modaldzin--is-visible");
+		}
+	}]);
+
+	return Modaldzin;
+}();
+
+exports.default = Modaldzin;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalhasel = function () {
+	function Modalhasel() {
+		_classCallCheck(this, Modalhasel);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--haseldan");
+		this.modal = (0, _jquery2.default)(".modalhasel");
+		this.closeModalButton = (0, _jquery2.default)(".modalhasel__close");
+		this.events();
+	}
+
+	_createClass(Modalhasel, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalhasel--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalhasel--is-visible");
+		}
+	}]);
+
+	return Modalhasel;
+}();
+
+exports.default = Modalhasel;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalkasp = function () {
+	function Modalkasp() {
+		_classCallCheck(this, Modalkasp);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--kasparan");
+		this.modal = (0, _jquery2.default)(".modalkasp");
+		this.closeModalButton = (0, _jquery2.default)(".modalkasp__close");
+		this.events();
+	}
+
+	_createClass(Modalkasp, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalkasp--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalkasp--is-visible");
+		}
+	}]);
+
+	return Modalkasp;
+}();
+
+exports.default = Modalkasp;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalrigan = function () {
+	function Modalrigan() {
+		_classCallCheck(this, Modalrigan);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--rigan");
+		this.modal = (0, _jquery2.default)(".modalrigan");
+		this.closeModalButton = (0, _jquery2.default)(".modalrigan__close");
+		this.events();
+	}
+
+	_createClass(Modalrigan, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalrigan--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalrigan--is-visible");
+		}
+	}]);
+
+	return Modalrigan;
+}();
+
+exports.default = Modalrigan;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalscroom = function () {
+	function Modalscroom() {
+		_classCallCheck(this, Modalscroom);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--scrooms");
+		this.modal = (0, _jquery2.default)(".modalscroom");
+		this.closeModalButton = (0, _jquery2.default)(".modalscroom__close");
+		this.events();
+	}
+
+	_createClass(Modalscroom, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalscroom--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalscroom--is-visible");
+		}
+	}]);
+
+	return Modalscroom;
+}();
+
+exports.default = Modalscroom;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalvin = function () {
+	function Modalvin() {
+		_classCallCheck(this, Modalvin);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--vinds");
+		this.modal = (0, _jquery2.default)(".modalvin");
+		this.closeModalButton = (0, _jquery2.default)(".modalvin__close");
+		this.events();
+	}
+
+	_createClass(Modalvin, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalvin--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalvin--is-visible");
+		}
+	}]);
+
+	return Modalvin;
+}();
+
+exports.default = Modalvin;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalgaian = function () {
+	function Modalgaian() {
+		_classCallCheck(this, Modalgaian);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--gaian");
+		this.modal = (0, _jquery2.default)(".modalgaian");
+		this.closeModalButton = (0, _jquery2.default)(".modalgaian__close");
+		this.events();
+	}
+
+	_createClass(Modalgaian, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalgaian--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalgaian--is-visible");
+		}
+	}]);
+
+	return Modalgaian;
+}();
+
+exports.default = Modalgaian;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modaldin = function () {
+	function Modaldin() {
+		_classCallCheck(this, Modaldin);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--dinakeri");
+		this.modal = (0, _jquery2.default)(".modaldin");
+		this.closeModalButton = (0, _jquery2.default)(".modaldin__close");
+		this.events();
+	}
+
+	_createClass(Modaldin, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modaldin--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modaldin--is-visible");
+		}
+	}]);
+
+	return Modaldin;
+}();
+
+exports.default = Modaldin;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalfisch = function () {
+	function Modalfisch() {
+		_classCallCheck(this, Modalfisch);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--fischeran");
+		this.modal = (0, _jquery2.default)(".modalfisch");
+		this.closeModalButton = (0, _jquery2.default)(".modalfisch__close");
+		this.events();
+	}
+
+	_createClass(Modalfisch, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalfisch--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalfisch--is-visible");
+		}
+	}]);
+
+	return Modalfisch;
+}();
+
+exports.default = Modalfisch;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalashi = function () {
+	function Modalashi() {
+		_classCallCheck(this, Modalashi);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--ashiin");
+		this.modal = (0, _jquery2.default)(".modalashi");
+		this.closeModalButton = (0, _jquery2.default)(".modalashi__close");
+		this.events();
+	}
+
+	_createClass(Modalashi, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalashi--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalashi--is-visible");
+		}
+	}]);
+
+	return Modalashi;
+}();
+
+exports.default = Modalashi;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Haseldan
+var Modalmadr = function () {
+	function Modalmadr() {
+		_classCallCheck(this, Modalmadr);
+
+		this.openModalButton = (0, _jquery2.default)(".open-modal--madrasian");
+		this.modal = (0, _jquery2.default)(".modalmadr");
+		this.closeModalButton = (0, _jquery2.default)(".modalmadr__close");
+		this.events();
+	}
+
+	_createClass(Modalmadr, [{
+		key: "events",
+		value: function events() {
+			this.openModalButton.click(this.openModal.bind(this));
+
+			this.closeModalButton.click(this.closeModal.bind(this));
+
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("modalmadr--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("modalmadr--is-visible");
+		}
+	}]);
+
+	return Modalmadr;
+}();
+
+exports.default = Modalmadr;
 
 /***/ })
 /******/ ]);

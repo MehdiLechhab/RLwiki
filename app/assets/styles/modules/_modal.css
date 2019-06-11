@@ -1,0 +1,1198 @@
+.modalcas {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .9rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*dzin modal*/
+.modaldzin {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .89rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .8rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Haseldan*/
+.modalhasel {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .89rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .8rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Kasparan*/
+.modalkasp {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .83rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .76rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Rigan*/
+.modalrigan {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .88rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .84rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Scrooms*/
+.modalscroom {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .8rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .7rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Vinds*/
+.modalvin {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 15%;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .85rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Gaian*/
+.modalgaian {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 13%;
+    bottom: 13%;
+    left: 13%;
+    right: 13%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .89rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .9rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Dinakeri*/
+.modaldin {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 13%;
+    bottom: 13%;
+    left: 13%;
+    right: 13%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .9rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .9rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Fischeran*/
+.modalfisch {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: .89rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .8rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Ashiin*/
+.modalashi {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .9rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}
+
+/*Madrasian*/
+.modalmadr {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+
+  &--front {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(105, 105, 105, .85);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+  }
+
+  &__title {
+    color: rgba(138, 43, 226, 1);
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+  }
+
+  &__subtitle {
+    color: gold;
+    font-size: .9rem;
+    margin-top: -10px;
+    /*margin-bottom: 60px;*/
+
+    @mixin atSmall {
+      color: gold;
+      font-size: 1.1rem;
+      margin-top: -30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.1;
+
+    @mixin atSmall {
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.15;
+    }
+  }
+
+  &__list {
+    color: gold;
+    list-style: none;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    font-size: .9rem;
+
+    @mixin atSmall {
+      color: gold;
+      list-style: none;
+      margin-left: 20%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(138, 43, 226, 1);
+    text-shadow: 1px 1px black;
+    transform: scaleX(1.3);
+    transition: all ease-in .4s;
+  }
+
+  &__close:hover {
+    transform: rotate(-180deg);
+    transition: all ease-in .4s;
+    text-shadow: 2px 2px rgba(138, 43, 226, 1);
+    color: maroon;
+  }
+}

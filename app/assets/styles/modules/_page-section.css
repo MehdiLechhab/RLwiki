@@ -12,6 +12,10 @@
 		background-color: #696969;
 	}
 
+	&--white {
+		background-color: maroon;
+	}
+
 	&--lightgrey {
 		background-color: #778899;
 	}

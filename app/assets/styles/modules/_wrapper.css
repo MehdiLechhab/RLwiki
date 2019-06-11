@@ -8,11 +8,14 @@
 
 	&--medium {
 		max-width: 976px;
-
 	}
 
 	&--small {
 		max-width: 530px;
 		
+	}
+
+	&--narrow {
+		max-width: 770px;
 	}
 }

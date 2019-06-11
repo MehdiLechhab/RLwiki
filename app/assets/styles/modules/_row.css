@@ -4,9 +4,32 @@
 
 	&__medium-4 {
 		float: left;
-		width: 30%;
+		width: 98%;
 		margin-bottom: 150px;
 		margin-right: 20px; 
+
+		@mixin atSmall {
+			float: left;
+			width: 30%;
+			margin-bottom: 150px;
+			margin-right: 20px;
+			/*margin-top: 100px;*/
+		}
+	}
+
+	&__medium-4--margin-top {
+
+		@mixin atSmall {
+			margin-top: 100px;
+		}
+	}
+
+	&__medium-4--margin-top-mobile {
+
+		margin-top: 100px;
+		@mixin atSmall {
+			margin-top: 100px;
+		}
 	}
 
 	/*&--gutters {
