@@ -6,11 +6,12 @@
 	transition: background-color .3s ease-out;
 
 	&--is-expanded {
-		background-color: rgba(102, 51, 153, .55);
+		background-color: rgba(0, 0, 0, .75);
 	}
 	
 
 	@mixin atSmall {
+		position: fixed;
 		background-color: rgba(0, 0, 0, .8);
 	}
 
@@ -30,7 +31,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: white;
+			background-color: purple;
 			transform-origin: 0 0;
 			transition: all .4s ease-out;
 		}
@@ -52,7 +53,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: white;
+			background-color: purple;
 			transform-origin: 0 100%;
 			transition: all .4s ease-out;
 		}

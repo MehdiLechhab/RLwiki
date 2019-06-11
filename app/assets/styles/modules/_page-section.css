@@ -15,4 +15,9 @@
 	&--lightgrey {
 		background-color: #778899;
 	}
+
+	&--races {
+		background: url('/assets/images/alana.png') top center no-repeat;
+		background-size: cover;
+	}
 }

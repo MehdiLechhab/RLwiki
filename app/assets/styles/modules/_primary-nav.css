@@ -50,4 +50,9 @@
 
 		}
 	}
+
+	a:hover {
+		background-color: maroon;
+		transition: background-color .7s ease-out;
+	}
 }

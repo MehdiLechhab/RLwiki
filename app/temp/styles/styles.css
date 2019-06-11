@@ -570,6 +570,11 @@ img {
 		background-color: #778899;
 	}
 
+.page-section--races {
+		background: url('/assets/images/alana.png') top center no-repeat;
+		background-size: cover;
+	}
+
 .headline {
 	font-weight: 300;
 	font-size: 1.475rem;
@@ -592,7 +597,7 @@ img {
 	}
 
 .site-footer {
-	background-color: #C13C3C;
+	background-color: black;
 	color: #FFFFFF;
 	padding: .5rem 0;
 	text-align: center;
@@ -630,12 +635,13 @@ img {
 }
 
 .site-header--is-expanded {
-		background-color: rgba(102, 51, 153, .55);
+		background-color: rgba(0, 0, 0, .75);
 	}
 
 @media (min-width: 530px) {
 
 .site-header {
+		position: fixed;
 		background-color: rgba(0, 0, 0, .8)
 }
 	}
@@ -656,7 +662,7 @@ img {
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: white;
+			background-color: purple;
 			-webkit-transform-origin: 0 0;
 			        transform-origin: 0 0;
 			-webkit-transition: all .4s ease-out;
@@ -681,7 +687,7 @@ img {
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: white;
+			background-color: purple;
 			-webkit-transform-origin: 0 100%;
 			        transform-origin: 0 100%;
 			-webkit-transition: all .4s ease-out;
@@ -799,6 +805,64 @@ img {
 			padding: 4px 4px;
 			border-radius: 10%
 	}
+	}
+
+.primary-nav a:hover {
+		background-color: maroon;
+		-webkit-transition: background-color .7s ease-out;
+		transition: background-color .7s ease-out;
+	}
+
+.row {
+
+	/*&--gutters {
+		margin-right: 65px;
+	}*/
+}
+
+.row::after {
+		content:"";
+		clear: both;
+		display: table;
+	}
+
+.row__medium-4 {
+		float: left;
+		width: 30%;
+		margin-bottom: 150px;
+		margin-right: 20px; 
+	}
+
+.race {
+	background-color: rgba(105, 105, 105, .85);
+	padding: 0 1.8125rem 1px 1.8125rem;
+}
+
+.race__photo {
+		border-radius: 80px;
+		overflow: hidden;
+		width: 160px;
+		height: 160px;
+		margin: 0 auto -80px auto;
+		position: relative;
+		top: -80px;
+		border: 6px solid rgba(105, 105, 105, .85);
+	}
+
+.race__title {
+		color: rgba(138, 43, 226, 1);
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0;
+	}
+
+.race__subtitle {
+		color: gold;
+		text-align: center;
+		font-weight: 400;
+		font-size: 0.93rem;
+		margin: .25rem 0 1rem 0;
 	}
 
 

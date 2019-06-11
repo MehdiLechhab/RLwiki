@@ -1,0 +1,15 @@
+.row {
+
+	@mixin clearfix;
+
+	&__medium-4 {
+		float: left;
+		width: 30%;
+		margin-bottom: 150px;
+		margin-right: 20px; 
+	}
+
+	/*&--gutters {
+		margin-right: 65px;
+	}*/
+}
