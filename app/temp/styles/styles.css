@@ -538,6 +538,8 @@ img {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+
+	
 }
 
 .wrapper--medium {
@@ -569,8 +571,12 @@ img {
 		background-color: #696969;
 	}
 
-.page-section--white {
+.page-section--maroon {
 		background-color: maroon;
+	}
+
+.page-section--black {
+		background-color: rgb(0, 0, 0, 1);
 	}
 
 .page-section--lightgrey {
@@ -580,6 +586,29 @@ img {
 .page-section--races {
 		background: url('/assets/images/alana.png') top center no-repeat;
 		background-size: cover;
+	}
+
+.page-section--text-decoration-none a {
+		text-decoration: none;
+		color: rgba(102,51,153, 1);
+		font-weight: 600;
+		/*text-shadow: 2px 2px black;*/
+		font-size: .99rem;
+		margin-right: -20px;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+	}
+
+.page-section--text-decoration-none a:hover {
+		text-decoration: none;
+		color: rgba(255, 125, 0, 1);
+		font-weight: 600;
+		/*text-shadow: 2px 2px black;*/
+		/*font-size: 1.1rem;*/
+		border-style: solid;
+		border-color: rgba(255, 125, 0, 1);
+		border-width: 3px;
+		overflow: hidden;
 	}
 
 .headline {
@@ -619,6 +648,23 @@ img {
 			font-size: .9rem;
 			font-weight: 300;
 		}
+
+.headline--small {
+		font-size: 1.4rem;
+		
+	}
+
+@media (min-width: 530px) {
+
+.headline--small {
+			font-size: 2rem;
+			padding-right: 15px;
+			border-style: solid;
+			border-color: orange;
+			border-width: 2px
+		
+	}
+	}
 
 .site-footer {
 	background-color: black;
@@ -837,13 +883,6 @@ img {
 		transition: background-color .7s ease-out;
 	}
 
-.row {
-
-	/*&--gutters {
-		margin-right: 65px;
-	}*/
-}
-
 .row::after {
 		content:"";
 		clear: both;
@@ -884,6 +923,88 @@ img {
 
 .row__medium-4--margin-top-mobile {
 			margin-top: 100px
+	}
+	}
+
+/*&--gutters {
+		margin-right: 65px;
+	}*/
+
+.row__medium-6 {
+		float: left;
+		width: 48%;
+	}
+
+@media (min-width: 530px) {
+
+.row__medium-6 {
+			float: left;
+			width: 48%
+			/*margin-top: 100px;*/
+	}
+	}
+
+.row__medium-2 {
+		float: left;
+		width: 90%;
+		list-style: none;
+		display: inline-block;
+		letter-spacing: .03rem;
+	}
+
+.row__medium-2--margin-left {
+			margin-left: 0;
+		}
+
+@media (min-width: 530px) {
+
+.row__medium-2--margin-left {
+				margin-left: -18px
+		}
+	}
+
+@media (min-width: 530px) {
+
+.row__medium-2 {
+			float: left;
+			width: 15%;
+			padding-right: 0;
+			padding-left: 0;
+			list-style: none;
+			display: block;
+			padding-right: 6px
+	}
+	}
+
+.row__medium-3 {
+		float: left;
+		width: 90%;
+		list-style: none;
+		display: inline-block;
+		padding-right: 7px;
+		letter-spacing: .03rem;
+	}
+
+.row__medium-3--margin-left {
+			margin-left: 0;
+		}
+
+@media (min-width: 530px) {
+
+.row__medium-3--margin-left {
+				margin-left: -35px
+		}
+	}
+
+@media (min-width: 530px) {
+
+.row__medium-3 {
+			float: left;
+			width: 20%;
+			list-style: none;
+			display: inline-block;
+			padding-right: 7px
+			/*margin-top: 100px;*/
 	}
 	}
 
@@ -944,7 +1065,11 @@ img {
 .modalcas {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  /*background-color: rgba(0, 0, 0, .8);*/
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   top: 0;
   bottom: 0;
   left: 0;
@@ -1078,7 +1203,9 @@ img {
 .modaldzin {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1212,7 +1339,9 @@ img {
 .modalhasel {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1346,7 +1475,9 @@ img {
 .modalkasp {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1480,7 +1611,9 @@ img {
 .modalrigan {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1614,7 +1747,9 @@ img {
 .modalscroom {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1748,7 +1883,9 @@ img {
 .modalvin {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1882,7 +2019,9 @@ img {
 .modalgaian {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2016,7 +2155,9 @@ img {
 .modaldin {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2150,7 +2291,9 @@ img {
 .modalfisch {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2284,7 +2427,9 @@ img {
 .modalashi {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2418,7 +2563,9 @@ img {
 .modalmadr {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2552,7 +2699,9 @@ img {
 .modalcameo {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2687,7 +2836,9 @@ img {
 .modalconst {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2822,7 +2973,9 @@ img {
 .modalazael {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -2956,7 +3109,9 @@ img {
 .modalms {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -3090,7 +3245,9 @@ img {
 .modalseraph {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -3224,7 +3381,9 @@ img {
 .modalflorian {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 62, .8)), color-stop(rgba(48, 43, 99, .8)), to(rgba(15, 12, 41, .8)));
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -3352,5 +3511,115 @@ img {
     text-shadow: 2px 2px rgba(138, 43, 226, 1);
     color: maroon;
   }
+
+.class {
+	text-align: center;
+	color: darkgrey;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.class__photo {
+		width: 260px;
+		height: 260px;
+		display: block; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.class__title {
+		
+		
+		font-size: 2.1rem;
+		font-weight: 700;
+	}
+
+.class__title--orange {
+			color: orange;
+			font-size: 3.2rem;
+		}
+
+@media (min-width: 530px) {
+
+.class__title--orange {
+				color: orange;
+				font-size: 3.5rem
+		}
+	}
+
+@media (min-width: 530px) {
+
+.class__title {
+			font-size: 3rem;
+			font-weight: 700
+	}
+	}
+
+.class__title--light {
+			color: rgba(30, 144, 255, 1);
+			text-shadow: 2px 2px white;
+		}
+
+.class__title--dark {
+			color: rgba(255, 0, 0, 1);
+			text-shadow: 3px 3px black;
+		}
+
+.class__subtitle {
+		font-size: 1.2rem;
+		color: rgba(255, 165, 0, 1);
+	}
+
+@media (min-width: 530px) {
+
+.class__subtitle {
+			font-size: 1.8rem;
+			color: rgba(255, 165, 0, 1)
+	}
+	}
+
+.class__subtitle--padding-bot {
+			padding-top: 29px;
+		}
+
+.class__description {
+		font-size: .79rem;
+		text-align: left;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+
+.class__description--padding-top {
+			padding-top: 12px;
+		}
+
+@media (min-width: 530px) {
+
+.class__description {
+			font-size: 1.2rem;
+			text-align: left;
+			margin-left: 50px;
+			margin-bottom: 50px
+	}
+	}
+
+.class__description li {
+		font-size: .7rem;
+		text-align: left;
+		list-style: none;
+		max-width: 408px;
+
+	}
+
+@media (min-width: 530px) {
+
+.class__description li {
+			font-size: 1.2rem;
+			text-align: left;
+			list-style: none;
+			max-width: 338px
+
+	}
+	}
 
 

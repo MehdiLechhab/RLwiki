@@ -1,0 +1,98 @@
+.class {
+	text-align: center;
+	color: darkgrey;
+	font-size: 2rem;
+	font-weight: 700;
+
+
+	&__photo {
+		width: 260px;
+		height: 260px;
+		display: block; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__title {
+		
+		
+		font-size: 2.1rem;
+		font-weight: 700;
+
+		&--orange {
+			color: orange;
+			font-size: 3.2rem;
+
+			@mixin atSmall {
+				color: orange;
+				font-size: 3.5rem;
+			}
+		}
+
+		@mixin atSmall {
+			font-size: 3rem;
+			font-weight: 700;
+		}
+		
+
+		&--light {
+			color: rgba(30, 144, 255, 1);
+			text-shadow: 2px 2px white;
+		}
+
+		&--dark {
+			color: rgba(255, 0, 0, 1);
+			text-shadow: 3px 3px black;
+		}
+	}
+
+
+	&__subtitle {
+		font-size: 1.2rem;
+		color: rgba(255, 165, 0, 1);
+		
+		@mixin atSmall {
+			font-size: 1.8rem;
+			color: rgba(255, 165, 0, 1);
+		}
+
+		&--padding-bot {
+			padding-top: 29px;
+		}
+	}
+
+	&__description {
+		font-size: .79rem;
+		text-align: left;
+		margin-left: 5px;
+		margin-bottom: 5px;
+
+
+		&--padding-top {
+			padding-top: 12px;
+		}
+
+		@mixin atSmall {
+			font-size: 1.2rem;
+			text-align: left;
+			margin-left: 50px;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__description li {
+		font-size: .7rem;
+		text-align: left;
+		list-style: none;
+		max-width: 408px;
+
+
+		@mixin atSmall {
+			font-size: 1.2rem;
+			text-align: left;
+			list-style: none;
+			max-width: 338px;
+		}
+
+	}
+}

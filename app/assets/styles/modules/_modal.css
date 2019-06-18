@@ -1,7 +1,11 @@
 .modalcas {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  /*background-color: rgba(0, 0, 0, .8);*/
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   top: 0;
   bottom: 0;
   left: 0;
@@ -115,7 +119,9 @@
 .modaldzin {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -229,7 +235,9 @@
 .modalhasel {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -343,7 +351,9 @@
 .modalkasp {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -457,7 +467,9 @@
 .modalrigan {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -571,7 +583,9 @@
 .modalscroom {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -685,7 +699,9 @@
 .modalvin {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -799,7 +815,9 @@
 .modalgaian {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -913,7 +931,9 @@
 .modaldin {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1027,7 +1047,9 @@
 .modalfisch {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1141,7 +1163,9 @@
 .modalashi {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1255,7 +1279,9 @@
 .modalmadr {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1369,7 +1395,9 @@
 .modalcameo {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1484,7 +1512,9 @@
 .modalconst {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1599,7 +1629,9 @@
 .modalazael {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1713,7 +1745,9 @@
 .modalms {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1827,7 +1861,9 @@
 .modalseraph {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
@@ -1941,7 +1977,9 @@
 .modalflorian {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, .94);
+  background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, .8), rgba(48, 43, 99, .8), rgba(15, 12, 41, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   bottom: 0;
   left: 0;
