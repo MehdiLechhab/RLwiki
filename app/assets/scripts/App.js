@@ -17,6 +17,8 @@ import Modalazael from './modules/Modalazael';
 import Modalms from './modules/Modalms';
 import Modalseraph from './modules/Modalseraph';
 import Modalflorian from './modules/Modalflorian';
+import SmoothScroll from './modules/SmoothScroll';
+import ReturnToTop from './modules/ReturnToTop';
 
 
 var mobileMenu = new MobileMenu();
@@ -38,3 +40,5 @@ var modalazael = new Modalazael();
 var modalms = new Modalms();
 var modalseraph = new Modalseraph();
 var modalflorian = new Modalflorian();
+var smoothScroll = new SmoothScroll();
+var returnToTop = new ReturnToTop();

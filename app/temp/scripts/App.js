@@ -10406,6 +10406,14 @@ var _Modalflorian = __webpack_require__(20);
 
 var _Modalflorian2 = _interopRequireDefault(_Modalflorian);
 
+var _SmoothScroll = __webpack_require__(21);
+
+var _SmoothScroll2 = _interopRequireDefault(_SmoothScroll);
+
+var _ReturnToTop = __webpack_require__(22);
+
+var _ReturnToTop2 = _interopRequireDefault(_ReturnToTop);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -10427,6 +10435,8 @@ var modalazael = new _Modalazael2.default();
 var modalms = new _Modalms2.default();
 var modalseraph = new _Modalseraph2.default();
 var modalflorian = new _Modalflorian2.default();
+var smoothScroll = new _SmoothScroll2.default();
+var returnToTop = new _ReturnToTop2.default();
 
 /***/ }),
 /* 2 */
@@ -11665,6 +11675,82 @@ var Modalflorian = function () {
 }();
 
 exports.default = Modalflorian;
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Select all links with hashes
+(0, _jquery2.default)('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]').not('[href="#0"]').click(function (event) {
+  // On-page links
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    // Figure out element to scroll to
+    var target = (0, _jquery2.default)(this.hash);
+    target = target.length ? target : (0, _jquery2.default)('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      (0, _jquery2.default)('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function () {
+        // Callback after animation
+        // Must change focus!
+        var $target = (0, _jquery2.default)(target);
+        $target.focus();
+        if ($target.is(":focus")) {
+          // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+
+// export default SmoothScroll;
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ===== Scroll to Top ==== 
+(0, _jquery2.default)(window).scroll(function () {
+    if ((0, _jquery2.default)(this).scrollTop() >= 50) {
+        // If page is scrolled more than 50px
+        (0, _jquery2.default)('#return-to-top').fadeIn(200); // Fade in the arrow
+    } else {
+        (0, _jquery2.default)('#return-to-top').fadeOut(200); // Else fade out the arrow
+    }
+});
+(0, _jquery2.default)('#return-to-top').click(function () {
+    // When arrow is clicked
+    (0, _jquery2.default)('body,html').animate({
+        scrollTop: 0 // Scroll to top of body
+    }, 500);
+});
 
 /***/ })
 /******/ ]);

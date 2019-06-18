@@ -658,10 +658,7 @@ img {
 
 .headline--small {
 			font-size: 2rem;
-			padding-right: 15px;
-			border-style: solid;
-			border-color: orange;
-			border-width: 2px
+			padding-right: 15px
 		
 	}
 	}
@@ -959,7 +956,7 @@ img {
 @media (min-width: 530px) {
 
 .row__medium-2--margin-left {
-				margin-left: -18px
+				/*margin-left: -18px;*/
 		}
 	}
 
@@ -967,6 +964,7 @@ img {
 
 .row__medium-2 {
 			float: left;
+			text-align: center;
 			width: 15%;
 			padding-right: 0;
 			padding-left: 0;
@@ -992,7 +990,7 @@ img {
 @media (min-width: 530px) {
 
 .row__medium-3--margin-left {
-				margin-left: -35px
+				/*margin-left: -35px;*/
 		}
 	}
 
@@ -1000,6 +998,7 @@ img {
 
 .row__medium-3 {
 			float: left;
+			text-align: center;
 			width: 20%;
 			list-style: none;
 			display: inline-block;
@@ -1009,7 +1008,8 @@ img {
 	}
 
 .race {
-	background-color: rgba(105, 105, 105, .85);
+	/*background-color: rgba(105, 105, 105, .85);*/
+	background-color: rgba(0, 0, 0, .75);
 	padding: 0 1.8125rem 1px 1.8125rem;
 }
 
@@ -3621,5 +3621,73 @@ img {
 
 	}
 	}
+
+#return-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    opacity: .6;
+    width: 30px;
+    height: 200px;
+    display: block;
+    text-decoration: none;
+   
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 530px) {
+
+#return-to-top {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        
+        width: 40px;
+        height: 40px;
+        display: block;
+        text-decoration: none;
+       
+        display: none;
+        -webkit-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease
+}
+	}
+
+#return-to-top i {
+    color: rgba(255, 255, 255, .3);
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 530px) {
+
+#return-to-top i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: 16px;
+        top: 13px;
+        font-size: 19px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease
+}
+	}
+
+#return-to-top:hover {
+   opacity: .6;
+}
+
+#return-to-top:hover i {
+    top: 5px;
+}
 
 

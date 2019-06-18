@@ -59,13 +59,14 @@
 			margin-left: 0;
 
 			@mixin atSmall {
-				margin-left: -18px;
+				/*margin-left: -18px;*/
 			}
 		}
 
 
 		@mixin atSmall {
 			float: left;
+			text-align: center;
 			width: 15%;
 			padding-right: 0;
 			padding-left: 0;
@@ -87,12 +88,13 @@
 			margin-left: 0;
 
 			@mixin atSmall {
-				margin-left: -35px;
+				/*margin-left: -35px;*/
 			}
 		}
 
 		@mixin atSmall {
 			float: left;
+			text-align: center;
 			width: 20%;
 			list-style: none;
 			display: inline-block;
