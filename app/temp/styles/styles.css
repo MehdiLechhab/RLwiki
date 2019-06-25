@@ -664,8 +664,18 @@ img {
 .headline--centered--darkgrey {
 		text-align: center;
 		color: darkgrey;
-		font-size: 2rem;
+		font-size: 1.2rem;
 		font-weight: 700;
+	}
+
+@media (min-width: 530px) {
+
+.headline--centered--darkgrey {
+			text-align: center;
+			color: darkgrey;
+			font-size: 2rem;
+			font-weight: 700
+	}
 	}
 
 .headline--centered--gold {
