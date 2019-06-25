@@ -762,7 +762,7 @@ img {
 .site-header__menu-icon {
 		width: 20px;
 		height: 19px;
-		position: absolute;
+		position: fixed;
 		z-index: 10;
 		top: 10px;
 		right: 5px;
@@ -3759,7 +3759,7 @@ img {
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3770,16 +3770,36 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #778899;
 }
+
+@media (min-width: 530px) {
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #778899
+}
+	}
 
 .banner video {
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   pointer-events: none;
 }
 
@@ -3922,8 +3942,9 @@ img {
 }
 
 .coming-soon img {
-	min-height: 100%;
-	min-width: 1024px;
+	max-height: 100vh;
+	max-width: 100%;
+
 
 	width: 100%;
 	height: auto;
