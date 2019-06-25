@@ -1,5 +1,6 @@
 .primary-nav {
 	padding-top: 10px;
+	z-index: 200;
 
 
 	@mixin atSmall {

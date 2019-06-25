@@ -2,11 +2,28 @@
 
 	@mixin clearfix;
 
+	&__medium-12 {
+		text-align: center;
+		width: 98%;
+	}
+
 	&__medium-4 {
 		float: left;
 		width: 98%;
 		margin-bottom: 150px;
 		margin-right: 20px; 
+
+		&--less-margin {
+			margin-bottom: 10px;
+			float: left;
+			width: 30%;
+
+			@mixin atSmall {
+				margin-bottom: 10px;
+				float: left;
+				width: 30%;
+			}
+		}
 
 		@mixin atSmall {
 			float: left;
