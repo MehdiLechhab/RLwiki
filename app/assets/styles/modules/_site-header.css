@@ -1,12 +1,13 @@
 .site-header {
 	padding: 10px 0;
-	position: absolute;
+	position: fixed;  /*Changed this from absolute*/
 	width: 100%;
 	z-index: 2;
 	transition: background-color .3s ease-out;
 
 	&--is-expanded {
 		background-color: rgba(0, 0, 0, .75);
+		position: fixed; /*Added this*/
 	}
 	
 
@@ -87,7 +88,7 @@
 		transform: scale(1.2);
 		transition: all.3s ease-out;
 		z-index: -10;
-		position: relative;
+		position: fixed;  /*Changed this from relative*/
 		padding-top: 2px;
 
 		@mixin atSmall {
