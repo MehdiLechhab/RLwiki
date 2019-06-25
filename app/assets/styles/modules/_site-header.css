@@ -1,5 +1,6 @@
 .site-header {
-	padding: 10px 0;
+	padding: 50px 0;
+	margin-top: -40px;
 	position: fixed;  /*Changed this from absolute*/
 	width: 100%;
 	z-index: 2;
@@ -14,6 +15,9 @@
 	@mixin atSmall {
 		position: fixed;
 		background-color: rgba(0, 0, 0, .8);
+		top: 0;
+		padding-bottom: 40px;
+		
 	}
 
 

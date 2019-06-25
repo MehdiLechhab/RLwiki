@@ -739,8 +739,9 @@ img {
 	}
 
 .site-header {
-	padding: 10px 0;
-	position: absolute;
+	padding: 50px 0;
+	margin-top: -40px;
+	position: fixed;  /*Changed this from absolute*/
 	width: 100%;
 	z-index: 2;
 	-webkit-transition: background-color .3s ease-out;
@@ -749,13 +750,16 @@ img {
 
 .site-header--is-expanded {
 		background-color: rgba(0, 0, 0, .75);
+		position: fixed; /*Added this*/
 	}
 
 @media (min-width: 530px) {
 
 .site-header {
 		position: fixed;
-		background-color: rgba(0, 0, 0, .8)
+		background-color: rgba(0, 0, 0, .8);
+		top: 0;
+		padding-bottom: 40px
 }
 	}
 
@@ -839,7 +843,7 @@ img {
 		-webkit-transition: all.3s ease-out;
 		transition: all.3s ease-out;
 		z-index: -10;
-		position: relative;
+		position: fixed;  /*Changed this from relative*/
 		padding-top: 2px;
 	}
 
